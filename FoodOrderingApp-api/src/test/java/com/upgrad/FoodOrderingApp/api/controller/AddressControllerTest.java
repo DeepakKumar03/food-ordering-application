@@ -44,7 +44,7 @@
 //    private AddressService mockAddressService;
 //
 //    @MockBean
-//    private CustomerService mockCustomerService;
+//    private CustomerServiceImp mockCustomerService;
 //
 //    // ------------------------------------------ POST /address ------------------------------------------
 //

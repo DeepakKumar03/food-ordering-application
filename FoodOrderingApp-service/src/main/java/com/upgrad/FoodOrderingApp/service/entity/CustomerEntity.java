@@ -1,11 +1,21 @@
 package com.upgrad.FoodOrderingApp.service.entity;
 
+import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.apache.commons.lang3.builder.ToStringStyle;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 
 @Entity
 @Table(name = "customer", schema = "public")
+@NamedQueries({
+  @NamedQuery(
+      name = "getCustomerByContactNumber",
+      query = "select c from CustomerEntity c where c.contactNumber=:contactNumber")
+})
 public class CustomerEntity implements Serializable {
 
   @Id
@@ -14,31 +24,35 @@ public class CustomerEntity implements Serializable {
   private Integer id;
 
   @Column(name = "uuid")
-  @Size(max=200)
+  @Size(max = 200)
   private String uuid;
 
-  @Size(max=30)
+  @Size(max = 30)
   @Column(name = "firstname")
+  @NotNull
   private String firstName;
 
   @Column(name = "lastname")
-  @Size(max=30)
+  @Size(max = 30)
   private String lastName;
 
   @Column(name = "email")
-  @Size(max=50)
+  @Size(max = 50)
+  @NotNull
   private String email;
 
-  @Size(max=30)
+  @Size(max = 30)
   @Column(name = "contact_number")
+  @NotNull
   private String contactNumber;
 
   @Column(name = "password")
-  @Size(max=255)
+  @Size(max = 255)
+  @NotNull
   private String password;
 
   @Column(name = "salt")
-  @Size(max=255)
+  @Size(max = 255)
   private String salt;
 
   public Integer getId() {
@@ -103,6 +117,17 @@ public class CustomerEntity implements Serializable {
 
   public void setSalt(String salt) {
     this.salt = salt;
+  }
+
+  @Override
+  public int hashCode() {
+    return new HashCodeBuilder().append(this).hashCode();
+  }
+
+  @Override
+  public String toString() {
+    return ToStringBuilder.reflectionToString(this, ToStringStyle.MULTI_LINE_STYLE);
+
   }
 
 }

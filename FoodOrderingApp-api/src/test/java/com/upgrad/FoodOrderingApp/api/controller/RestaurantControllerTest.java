@@ -50,7 +50,7 @@
 //    private CategoryService mockCategoryService;
 //
 //    @MockBean
-//    private CustomerService mockCustomerService;
+//    private CustomerServiceImp mockCustomerService;
 //
 //    // ------------------------------------------ GET /restaurant/{restaurant_id} ------------------------------------------
 //

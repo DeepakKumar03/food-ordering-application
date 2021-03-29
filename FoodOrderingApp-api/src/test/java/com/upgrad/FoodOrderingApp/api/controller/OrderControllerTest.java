@@ -39,7 +39,7 @@
 //    private OrderService mockOrderService;
 //
 //    @MockBean
-//    private CustomerService mockCustomerService;
+//    private CustomerServiceImp mockCustomerService;
 //
 //    @MockBean
 //    private PaymentService mockPaymentService;
