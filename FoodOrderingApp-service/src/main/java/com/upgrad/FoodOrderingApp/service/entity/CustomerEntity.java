@@ -8,6 +8,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.List;
 
 @Entity
 @Table(name = "customer", schema = "public")
@@ -54,6 +55,23 @@ public class CustomerEntity implements Serializable {
   @Column(name = "salt")
   @Size(max = 255)
   private String salt;
+
+//  @ManyToMany(cascade = { CascadeType.ALL },fetch = FetchType.LAZY)
+//  @JoinTable(
+//          name = "customer_address",
+//          joinColumns = { @JoinColumn(name = "customer_id") },
+//          inverseJoinColumns = { @JoinColumn(name = "address_id") }
+//  )
+  @ManyToMany(cascade = { CascadeType.ALL },mappedBy = "customers",fetch = FetchType.LAZY)
+  private List<AddressEntity> addresses;
+
+  public List<AddressEntity> getAddresses() {
+    return addresses;
+  }
+
+  public void setAddresses(List<AddressEntity> addresses) {
+    this.addresses = addresses;
+  }
 
   public Integer getId() {
     return id;

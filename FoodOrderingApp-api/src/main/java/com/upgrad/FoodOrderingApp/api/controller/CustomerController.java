@@ -48,7 +48,7 @@ public class CustomerController {
       throw new SignUpRestrictedException(
           "SGR-001", "This contact number is already registered! Try other contact number.");
 
-    if (signupCustomerRequest.getFirstName().isEmpty()
+    if (signupCustomerRequest==null||signupCustomerRequest.getFirstName().isEmpty()
         || signupCustomerRequest.getContactNumber().isEmpty()
         || signupCustomerRequest.getEmailAddress().isEmpty()
         || signupCustomerRequest.getPassword().isEmpty())

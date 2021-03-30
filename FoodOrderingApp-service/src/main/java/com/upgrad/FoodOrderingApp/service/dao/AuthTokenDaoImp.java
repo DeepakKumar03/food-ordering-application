@@ -9,7 +9,7 @@ import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 
 @Repository
-public class AuthTokenImp implements AuthTokenDao{
+public class AuthTokenDaoImp implements AuthTokenDao{
 
     @PersistenceContext
     private EntityManager entityManager;
