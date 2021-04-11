@@ -19,7 +19,8 @@ spring:
     properties:
       hibernate:
         format_sql: true
-        default_schema: quora
+        default_schema: public
+        ddl-auto: update
         temp:
           use_jdbc_metadata_defaults: false
     database-platform: org.hibernate.dialect.PostgreSQL9Dialect

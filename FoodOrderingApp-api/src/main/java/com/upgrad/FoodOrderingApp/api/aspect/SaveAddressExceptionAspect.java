@@ -9,11 +9,13 @@ import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 
-
 @ControllerAdvice
-public class SaveAddressExceptionAspect{
-    @ExceptionHandler(SaveAddressException.class)
-    public ResponseEntity<ErrorResponse> signUpRestrictedException(SaveAddressException ex, WebRequest request){
-        return new ResponseEntity<ErrorResponse>(new ErrorResponse().code(ex.getCode()).message(ex.getErrorMessage()), HttpStatus.CONFLICT);
-    }
+public class SaveAddressExceptionAspect {
+  @ExceptionHandler(SaveAddressException.class)
+  public ResponseEntity<ErrorResponse> SaveAddressException(
+      SaveAddressException exc, WebRequest request) {
+    return new ResponseEntity<ErrorResponse>(
+        new ErrorResponse().code(exc.getCode()).message(exc.getErrorMessage()),
+        HttpStatus.BAD_REQUEST);
+  }
 }

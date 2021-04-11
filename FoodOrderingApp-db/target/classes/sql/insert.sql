@@ -37,18 +37,18 @@ INSERT INTO STATE(uuid,state_name) VALUES('7d174a25-ba31-45a8-85b4-b06ffc9d5f8f'
 INSERT INTO STATE(uuid,state_name) VALUES('6c84c29a-3a79-4a60-adad-d1cf9fb44575','Uttarakhand');
 INSERT INTO STATE(uuid,state_name) VALUES('009ae262-a234-11e8-b475-720006ceb890','West Bengal');
 
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('7d174a25-ba31-45a8-85b4-b06ffc9d5f8f','Dr. B A Marg, Opposite Rani Baug, Byculla East','Byculla','Mumbai','400018',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('6c84c29a-3a79-4a60-adad-d1cf9fb44575','C18, Dreamworks, Dalia Estate','Veera Desai Area','Mumbai','400011',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('7c174b25-bb31-46a8-87b4-c06ffc9d5f8f','Godrej BKC, Unit 3, Plot C - 68, G Block, Bandra Kurla Complex','Bandra Kurla Complex','Mumbai','400112',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('8c174b25-bb31-56a8-88b4-d06ffc9d5f89','4th & 5th floor, Rohan Plaza','Khar','Mumbai','400052',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('9c174b25-cb31-66a8-98b4-d06ffc9d5f9f','House 101, Opposite Vijay Sales','Chembur','Mumbai','400092',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('f114b346-a237-11e8-9077-720006ceb890','K Star Hotel, Plot 46 & 55','CBD-Belapur','Navi Mumbai','400102',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('24614e76-a238-11e8-9077-720006ceb890','Floor 1, Jalaram Commercial Centre','Sakinaka','Mumbai','400072',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('24615498-a238-11e8-9077-720006ceb890','The Unicontental, 3rd Road','Khar','Mumbai','400058',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('2461589e-a238-11e8-9077-720006ceb890','Nishuvi, Ground Floor, 75','Dr. Annie Besant Rd, Worli','Mumbai','400018',21);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('24615c0e-a238-11e8-9077-720006ceb890','#546','Amarjyothi Layout, H.B.C.S. Domlur','Bengaluru','560071',17);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('24615f4c-a238-11e8-9077-720006ceb890','1st Floor, Akshaya Arcade, Plot No.5','Phase II, Kavuri Hills, Amar Society, Madhapur','Hyderabad','500033',32);
-INSERT INTO ADDRESS(uuid,flat_buil_number,locality,city,pincode,state_id) VALUES('246162a8-a238-11e8-9077-720006ceb890','26/C','Hosur Rd, Electronics City Phase 1, Electronic City','Bengaluru','560100',17);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('7d174a25-ba31-45a8-85b4-b06ffc9d5f8f','Dr. B A Marg, Opposite Rani Baug, Byculla East','Byculla','Mumbai','400018',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('6c84c29a-3a79-4a60-adad-d1cf9fb44575','C18, Dreamworks, Dalia Estate','Veera Desai Area','Mumbai','400011',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('7c174b25-bb31-46a8-87b4-c06ffc9d5f8f','Godrej BKC, Unit 3, Plot C - 68, G Block, Bandra Kurla Complex','Bandra Kurla Complex','Mumbai','400112',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('8c174b25-bb31-56a8-88b4-d06ffc9d5f89','4th & 5th floor, Rohan Plaza','Khar','Mumbai','400052',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('9c174b25-cb31-66a8-98b4-d06ffc9d5f9f','House 101, Opposite Vijay Sales','Chembur','Mumbai','400092',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('f114b346-a237-11e8-9077-720006ceb890','K Star Hotel, Plot 46 & 55','CBD-Belapur','Navi Mumbai','400102',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('24614e76-a238-11e8-9077-720006ceb890','Floor 1, Jalaram Commercial Centre','Sakinaka','Mumbai','400072',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('24615498-a238-11e8-9077-720006ceb890','The Unicontental, 3rd Road','Khar','Mumbai','400058',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('2461589e-a238-11e8-9077-720006ceb890','Nishuvi, Ground Floor, 75','Dr. Annie Besant Rd, Worli','Mumbai','400018',21);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('24615c0e-a238-11e8-9077-720006ceb890','#546','Amarjyothi Layout, H.B.C.S. Domlur','Bengaluru','560071',17);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('24615f4c-a238-11e8-9077-720006ceb890','1st Floor, Akshaya Arcade, Plot No.5','Phase II, Kavuri Hills, Amar Society, Madhapur','Hyderabad','500033',32);
+INSERT INTO ADDRESS(uuid,flat_build_number,locality,city,pincode,state_id) VALUES('246162a8-a238-11e8-9077-720006ceb890','26/C','Hosur Rd, Electronics City Phase 1, Electronic City','Bengaluru','560100',17);
 
 
 INSERT INTO RESTAURANT(uuid,restaurant_name,photo_url,customer_rating,average_price_for_two,number_of_customers_rated,address_id) VALUES('246165d2-a238-11e8-9077-720006ceb890','Gateway Taproom','https://b.zmtcdn.com/data/pictures/0/18564740/686000d2b5cfebfad3300f313eaae79c.jpg?output-format=webp',4.70,2200,714,3);

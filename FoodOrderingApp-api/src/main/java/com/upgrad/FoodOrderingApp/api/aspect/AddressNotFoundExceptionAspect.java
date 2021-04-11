@@ -11,8 +11,11 @@ import org.springframework.web.context.request.WebRequest;
 
 @ControllerAdvice
 public class AddressNotFoundExceptionAspect {
-    @ExceptionHandler(AddressNotFoundException.class)
-    public ResponseEntity<ErrorResponse> updateCustomerExceptionHandler(AddressNotFoundException ex, WebRequest request){
-        return new ResponseEntity<ErrorResponse>(new ErrorResponse().code(ex.getCode()).message(ex.getErrorMessage()), HttpStatus.FORBIDDEN);
-    }
+  @ExceptionHandler(AddressNotFoundException.class)
+  public ResponseEntity<ErrorResponse> AddressNotFoundException(
+      AddressNotFoundException exc, WebRequest request) {
+    return new ResponseEntity<>(
+        new ErrorResponse().code(exc.getCode()).message(exc.getErrorMessage()),
+        HttpStatus.NOT_FOUND);
+  }
 }

@@ -1,3 +1,4 @@
+com\upgrad\FoodOrderingApp\api\aspect\CouponNotFoundExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\model\ItemListResponse.class
 com\upgrad\FoodOrderingApp\api\model\CustomerOrderResponse.class
 com\upgrad\FoodOrderingApp\api\config\SwaggerConfiguration.class
@@ -21,11 +22,15 @@ com\upgrad\FoodOrderingApp\api\model\AddressListResponse.class
 com\upgrad\FoodOrderingApp\api\model\RestaurantUpdatedResponse.class
 com\upgrad\FoodOrderingApp\api\model\StatesList.class
 com\upgrad\FoodOrderingApp\api\model\StatesListResponse.class
+com\upgrad\FoodOrderingApp\api\aspect\AddressNotFoundExceptionAspect.class
 io\swagger\Swagger2SpringBoot$ExitException.class
+com\upgrad\FoodOrderingApp\api\aspect\SaveAddressExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\aspect\SignUpRestrictedExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\model\CategoriesListResponse.class
 com\upgrad\FoodOrderingApp\api\model\LoginResponse.class
+com\upgrad\FoodOrderingApp\api\aspect\ItemNotFoundExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\model\UpdateCustomerResponse.class
+com\upgrad\FoodOrderingApp\api\aspect\InvalidRatingExceptionAspect.class
 io\swagger\api\NotFoundException.class
 io\swagger\api\ApiException.class
 com\upgrad\FoodOrderingApp\api\model\CategoryListResponse.class
@@ -41,10 +46,13 @@ com\upgrad\FoodOrderingApp\api\model\DeleteAddressResponse.class
 com\upgrad\FoodOrderingApp\api\model\ItemList$ItemTypeEnum.class
 com\upgrad\FoodOrderingApp\api\model\SaveOrderRequest.class
 com\upgrad\FoodOrderingApp\api\controller\PaymentController.class
+com\upgrad\FoodOrderingApp\api\aspect\UpdateCustomerExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\model\OrderListAddress.class
 com\upgrad\FoodOrderingApp\api\model\UpdatePasswordRequest.class
 com\upgrad\FoodOrderingApp\api\model\ItemQuantity.class
+com\upgrad\FoodOrderingApp\api\aspect\AuthenticationFailedExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\controller\AddressController.class
+com\upgrad\FoodOrderingApp\api\aspect\CategoryNotFoundExceptionAspect.class
 com\upgrad\FoodOrderingApp\api\model\OrderListAddressState.class
 com\upgrad\FoodOrderingApp\api\model\CouponDetailsResponse.class
 com\upgrad\FoodOrderingApp\api\controller\CategoryController.class
@@ -61,7 +69,10 @@ com\upgrad\FoodOrderingApp\api\controller\ItemController.class
 com\upgrad\FoodOrderingApp\api\model\OrderListPayment.class
 com\upgrad\FoodOrderingApp\api\model\PaymentListResponse.class
 com\upgrad\FoodOrderingApp\api\model\RestaurantDetailsResponseAddressState.class
+com\upgrad\FoodOrderingApp\api\aspect\RestaurantNotFoundExceptionAspect.class
+com\upgrad\FoodOrderingApp\api\aspect\AuthorizationFailedExceptionAspect.class
 io\swagger\RFC3339DateFormat.class
+com\upgrad\FoodOrderingApp\api\aspect\PaymentMethodNotFoundExceptionAspect.class
 io\swagger\configuration\SwaggerDocumentationConfig.class
 com\upgrad\FoodOrderingApp\api\model\CategoryList.class
 com\upgrad\FoodOrderingApp\api\model\OrderListCustomer.class
